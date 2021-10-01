@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title%}basic geometry{%endblock%}
+<div class="container">
+    {% block content %}
+    <h1 style="text-align: center;">fill in the boxes if you hit solve an it sends you back here then you may not have filled in all of the boxes or your problem is imposibe</h1>
+    <form method="POST">
+        <h3 align = 'center'>triangle</h3>
+        
+
+   <div class="triangle" align = 'center'>
+        
+    <div>
+            <p>base1</p>
+            <label for="base1"  ></label>
+            <input style="width: 2cm;"
+             type="text" 
+             class="sides"
+             id="base1" 
+             name="base1" 
+             placeholder="">
+             
+
+             
+    </div>
+    <div>
+        <p>base2</p>
+        <label for="base2"  ></label>
+        <input style="width: 2cm;"
+         type="text" 
+         class="sides"
+         id="base2" 
+         name="base2" 
+         placeholder="">
+         
+
+         
+</div>
+    <div>
+        <p>height</p>
+        <label for="height"  ></label>
+        <input style="width: 2cm;"
+         type="text" 
+         class="sides"
+         id="height" 
+         name="height" 
+         placeholder="">
+         
+
+         
+</div>
+
+        
+         <br>
+         <button style="margin-left: 47%;" type="submit" class="btn btn-primary" >solve</button>
+
+    </form>
+    {% endblock %}
+</div>

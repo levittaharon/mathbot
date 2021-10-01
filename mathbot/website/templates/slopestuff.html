@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title%}basic algebra{%endblock%}
+<div class="container">
+    {% block content %}
+    <h1 style="text-align: center;">type in 2 ordered pairs and you will get slope intercept form if you hit the button and it takes you back to this page then there was an error make sure that you fill in all of the boxes</h1>
+    <form method="POST">
+        <h3 align = 'center'>algebra</h3>
+        
+
+   <div class="equation" align = 'center'>
+        <div  style="display: inline-flex;">
+            <h2 >(</h2>
+            <label for="x1"  ></label>
+            <input style="width: 1cm;"
+             type="text" 
+             class="xs"
+             id="x1" 
+             name="x1" 
+             placeholder="">
+             <h2 >,</h2>
+            <label for="y1" ></label>
+            <input style="width: 1cm;"
+             type="text" 
+             class="ys"
+             id="y1" 
+             name="y1" 
+             placeholder="">
+             <h2 >) (</h2>
+             
+
+             <label for="x2"  ></label>
+             <input style="width: 1cm;"
+              type="text" 
+              class="xs"
+              id="x2" 
+              name="x2" 
+              placeholder="">
+
+              <h3 >,</h3>
+
+              <label for="y1" ></label>
+              <input style="width: 1cm;"
+               type="text" 
+               class="ys"
+               id="y2" 
+               name="y2" 
+               placeholder="">
+               <h2 >)</h2>
+             
+         </div>
+        
+       
+        
+        
+    </div>
+
+        
+         <br>
+         <button style="margin-left: 47%;" type="submit" class="btn btn-primary" >solve</button>
+
+    </form>
+    {% endblock %}
+</div>

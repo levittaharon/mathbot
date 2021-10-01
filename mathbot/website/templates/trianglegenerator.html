@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title%}trig{%endblock%}
+<div class="container">
+    {% block content %}
+    <h1 style="text-align: center;">fill out the measure of the side or angle if you couldnt tell lowercase are sides and upercase are angles if the angle or side is unknown then fill in 0 this requires at least 2 sides or an angle and a side</h1>
+    <form method="POST">
+        <h3 align = 'center'>triangle generator</h3>
+        
+
+   <div class="equation" align = 'center'>
+        
+        <div>
+            
+            <h3 >side a</h3>
+        
+            <label for="a"  ></label>
+            <input style="width: 2cm;"
+            type="text" 
+            class="sides"
+            id="a" 
+            name="a" 
+            placeholder="">
+         
+        </div>
+
+        <div>
+            
+            <h3 >side b</h3>
+        
+            <label for="b"  ></label>
+            <input style="width: 2cm;"
+            type="text" 
+            class="sides"
+            id="b" 
+            name="b" 
+            placeholder="">
+         
+        </div>
+    
+        <div>
+            
+            <h3 >side c</h3>
+        
+            <label for="c"  ></label>
+            <input style="width: 2cm;"
+            type="text" 
+            class="sides"
+            id="c" 
+            name="c" 
+            placeholder="">
+         
+        </div>
+
+        <div>
+            
+            <h3 >Angle A</h3>
+            
+            <label for="A"  ></label>
+            <input style="width: 2cm;"
+             type="text" 
+             class="angles"
+             id="A" 
+             name="A" 
+             placeholder="">
+             
+        </div>
+
+        <div>
+             <h3 >Angle C</h3> 
+            
+            <label for="C" ></label>
+            <input style="width: 2cm;"
+             type="text" 
+             class="angles"
+             id="C" 
+             name="C" 
+             placeholder="">
+             
+        </div>
+        
+        <img src="static/triangle.jpg" style="margin-left: 12%; width: 40%;">
+    
+
+        
+         <br>
+         <button style="margin-left: 47%;" type="submit" class="btn btn-primary" >solve</button>
+
+    </form>
+    {% endblock %}
+</div>

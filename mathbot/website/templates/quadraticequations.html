@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title%}basic algebra{%endblock%}
+<div class="container">
+    {% block content %}
+    <h1 style="text-align: center;">type in a quadratic equation no fractions only decimals and if there is something to fill in that you don't need fill the box in with zero remember if you still need the x use a 1 if you hit solve an it sends you back here then you may not have filled in all of the boxes or your problem is imposibe</h1>
+    <form method="POST">
+        <h3 align = 'center'>algebra</h3>
+        
+
+   <div class="equation" align = 'center'>
+        <div  style="display: inline-flex;">
+
+            <label for="coeficient1"  ></label>
+            <input style="width: 1cm;"
+             type="text" 
+             class="coeficients"
+             id="coeficient1" 
+             name="coeficient1" 
+             placeholder="">
+             
+
+             <h3 >x<sup>2</sup> +</h3>
+
+             <label for="coeficient2"  ></label>
+             <input style="width: 1cm;"
+              type="text" 
+              class="coeficients"
+              id="coeficient2" 
+              name="coeficient2" 
+              placeholder="">
+
+              <h3 >x +</h3>
+
+            <label for="constent1" ></label>
+            <input style="width: 1cm;"
+             type="text" 
+             class="constents"
+             id="constent1" 
+             name="constent1" 
+             placeholder="">
+             
+         </div>
+        
+        <h3 style="display: inline-flex;">= 0</h3>
+        
+        
+    </div>
+
+        
+         <br>
+         <button style="margin-left: 47%;" type="submit" class="btn btn-primary" >solve</button>
+
+    </form>
+    {% endblock %}
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous"
+        />
+
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"
+      />
+        <title>{% block title %}Home{% endblock %}</title>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-1g navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar" style="text-align: center;">
+                <a class="nav-item nav-link" id="home" href="/" style="color: darkgrey;">Home</a>
+
+                <h3 style="color:forestgreen;">basic geometry </h3>
+                <a class="nav-item nav-link" id="rectangle" href="/rectangle" style="color:forestgreen;">perimiter and area of rectangle</a>
+                <a class="nav-item nav-link" id="circle" href="/circle" style="color:forestgreen;">area and circumference of circle</a>
+                <a class="nav-item nav-link" id="rectangualrprism" href="/rectangularprism" style="color:forestgreen;">volume and surface area of rectangular prism</a>
+                <a class="nav-item nav-link" id="cylinder" href="/cylinder" style="color:forestgreen;">surfacearea and volume of cylinder</a>
+                <a class="nav-item nav-link" id="sphere" href="/sphere" style="color:forestgreen;">surfacearea and volume of sphere</a>
+                <a class="nav-item nav-link" id="gtriangle" href="/gtriangle" style="color:forestgreen;">area and perimiter of triangle</a>
+                <a class="nav-item nav-link" id="trapazoid" href="/trapazoid" style="color:forestgreen;">area of trapazoid</a>
+
+                <h3 style="color:royalblue ;">algebra </h3>
+                <a class="nav-item nav-link" id="basicalgebra" href='/basicalgebra'>basicalgebra</a>
+                <a class="nav-item nav-link" id="quadraticequations" href="/quadraticequations">quadraticequations</a>
+                <a class="nav-item nav-link" id="quadraticfactor" href="/quadraticfactor">quadraticfactor</a>
+                <a class="nav-item nav-link" id="foil" href="/foil">basic foil</a>
+                <a class="nav-item nav-link" id="foil2" href="/foil2">2 variable foil</a>
+                <a class="nav-item nav-link" id="slopestuff" href="/slopestuff">slope-intercept form</a>
+                <a class="nav-item nav-link" id="inequalities" href="/inequalities">inequalities</a>
+                <a class="nav-item nav-link" id="2x2systems" href="/2x2systems">2x2 systems of equations</a>
+
+                <h3 style="color: firebrick;">triganometry </h3>
+                <a class="nav-item nav-link" id="triangle" href="/triangle" style="color: firebrick;">right triangle generator</a>
+
+                
+            </div>
+
+        </nav>
+  
+        
+        <div class="container">
+            {% block content %}
+            <h1>this is the home page</h1>
+            {% endblock %}
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous">
+        </script>
+    </body>
+</html>
